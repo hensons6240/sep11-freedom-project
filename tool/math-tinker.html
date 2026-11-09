@@ -5,14 +5,36 @@
 </head>
 <body>
   <script type="text/javascript">
-    document.write(math.evaluate('1+2324/52'))
-    document.write(math.evaluate('1237051+589218095'))
-    document.write(math.evaluate('1-1+1/3'))
-    function equal_one(num){
-        return num == 1
+    // function equal_one(num){
+    //     return num == 1
+    // }
+    // var expression = prompt("Type an expression you believe to be equal to one!")
+    // document.write(equal_one(math.evaluate(expression)))
+    function random(num1,num2,add,sub,mul){
+      var new_num = math.chain(num1)
+        .add(add)
+        .subtract(sub)
+        .multiply(mul)
+      if (new_num > num2){
+        return "cool"
+      }
+      else if (new_num < num2){
+        return "not cool"
+      }
+      else{
+        return "meh"
+      }
     }
-    var expression = prompt("Type an expression you believe to be equal to one!")
-    document.write(equal_one(math.evaluate(expression)))
+    document.write(random(10,10,10,10,10))
+  document.write(math.sqrt(-4));
+  if(math.sqrt(-4) > 2){
+    document.write("yes")
+  }else if(math.sqrt(-4) < 2){
+    document.write("no")
+  }else{
+    document.write("maybe")
+  }
+  
   </script>
 </body>
 </html>
