@@ -63,14 +63,14 @@
     math.evaluate('a+b',scope2) // Now will be 15
     ```
     This can probably be used for figuring which set of numbers you want to use for this problem even if the variables are the same.
-* You can also change a value of a variable like that of a list. For a list, you would do: `lst[0] = "new value"`. On the otherhand, for a scope, you would place the variable name of the scope, following by a '.' then the vairable you wish to change equal to its new value. Ex.
-``` js
+* You can also change a value of a variable like that of a list. For a list, you would do: `lst[0] = "new value"`. On the otherhand, for a scope, you would place the variable name of the scope, following by a '.' then the vairable you wish to change equal to its new value. Ex:
+    * 
+    ``` js 
     var scope = {
         a: 5
     }
     scope.a = 8
-    math.evaluate('a*a', scope) // 64 instead of 25
- ```
+    math.evaluate('a*a',scope) // 64 instead of 25
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
