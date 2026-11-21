@@ -35,6 +35,18 @@
     document.write("maybe")
   }
   
+var parsed = ('a*b')
+document.write(parsed)
+const scope = {
+    a: 3,
+    b: 4
+}
+var scope2 = {
+            a: 5,
+            b: 10
+        }
+var scope_test = math.evaluate('a+b',scope2)
+document.write(scope_test)
   </script>
 </body>
 </html>
