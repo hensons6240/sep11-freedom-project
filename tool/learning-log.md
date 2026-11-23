@@ -65,12 +65,23 @@
     This can probably be used for figuring which set of numbers you want to use for this problem even if the variables are the same.
 * You can also change a value of a variable like that of a list. For a list, you would do: `lst[0] = "new value"`. On the otherhand, for a scope, you would place the variable name of the scope, following by a '.' then the vairable you wish to change equal to its new value. Ex:
     * 
-    ``` js 
+    ```js 
     var scope = {
         a: 5
     }
     scope.a = 8
     math.evaluate('a*a',scope) // 64 instead of 25
+    ```
+## Week 5
+`scope()` has many more functions than just using it to assign variables. Using [here](https://mathjs.org/examples/expressions.js.html), I learned more properties of scope.
+* Scope can be used to return a variable within an equation if isolated. Ex:
+
+```js
+var scope_test2 = math.evaluate('c = 10 + 30',scope) 
+console.log(scope.c) // 40
+```
+
+    * After
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

@@ -41,12 +41,14 @@ const scope = {
     a: 3,
     b: 4
 }
-var scope2 = {
-            a: 5,
-            b: 10
-        }
-var scope_test = math.evaluate('a+b',scope2)
-document.write(scope_test)
+// var scope2 = {
+//             a: 5,
+//             b: 10
+//         }
+// var scope_test = math.evaluate('a+b',scope2)
+// document.write(scope_test)
+var scope_test2 = math.evaluate('c = 5 + 15', scope)
+document.write(scope.c)
   </script>
 </body>
 </html>
